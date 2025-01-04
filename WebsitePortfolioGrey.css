@@ -6,14 +6,14 @@ html {
 }
 
 body {
-    background-color: aliceblue;
+    background-color: #FAF9F6;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
 .projectoverviewh1 {
-    background-color: aliceblue;
+    background-color: #FAF9F6;
     font-size: 30px;
     font-family: monospace;
     color: black;
@@ -233,7 +233,7 @@ body {
 .infobox {
     margin-left: 20px;
     height: 300px;
-    background-color: aliceblue;
+    background-color: #FAF9F6;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.1);
@@ -285,7 +285,7 @@ body {
     margin: 10px 0;
     padding: 5px;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .buttongroup {
@@ -363,7 +363,7 @@ body {
     width: 450px;
     height: 350px;
     padding-top: 70px;
-    background-color: aliceblue; 
+    background-color: #FAF9F6; 
     border-radius: 2%;
     font-family: monospace;
     box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);
@@ -404,7 +404,7 @@ body {
 }
 
 .flip-box-front {
-    background-color: aliceblue;
+    background-color: #FAF9F6;
     color: black;
 }
 
@@ -531,7 +531,7 @@ body {
     flex-direction: column;  
     justify-content: center;        
     align-items: center;            
-    background-color: aliceblue;
+    background-color: #FAF9F6;
     text-align: center;             
     height: 70%;      
     width: 70%;
