@@ -1,0 +1,551 @@
+/* style.css */
+
+/* Website Homepage */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.section-1 {
+    min-height: 100%;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+/*Header Design*/
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header h1 {
+    font-size: 60px;
+    font-family: monospace;
+    color: black;
+    text-shadow: 2px 2px 4px gray;
+    letter-spacing: 5px;
+    display: inline-block;
+}
+
+.typing {
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 0; 
+    animation:
+        typing 2s steps(17) forwards,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.header h3 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-family: monospace;
+    color:black;
+    text-shadow: 2px 2px 4px gray;
+}
+
+/*Menu Design*/
+.menucontainer {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: flex; 
+    height: 10px; 
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    font-size: 25px;
+    font-weight: 800;
+    display: flex;
+    gap: 40px;
+    font-family: monospace;
+    text-shadow: 2px 2px 4px gray;
+    
+}
+
+.menu ul li a {
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+    color:black; 
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    text-shadow: 2px 2px 4px gray;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+}
+
+/* About me Page */
+.aboutcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:70%;
+    height: 600px;
+    margin: 0 auto;
+    background-color:#C0C0C0;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 1%;
+    position: relative;
+    z-index: 1;
+
+}
+
+.infobox {
+    margin-left: 20px;
+    height: 300px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.1);
+    font-family: monospace;
+    line-height: 1,5;
+    color:black;
+    position: relative;
+    z-index: 10;
+}
+
+.wrapper {
+    position: relative; 
+    z-index: 2; 
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+
+}
+
+.wrapper::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 97.5%;
+    background-image: conic-gradient(from var(--angle), transparent 70%,  black);
+    top: 50%;
+    left: 51.3%;
+    translate: -50% -50%;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+
+}
+
+.text h3 {
+    margin: 10px 0;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.buttongroup {
+    font-size: 15px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttoncv, .buttongithub {
+    display: inline-block; 
+    padding: 10px 20px; 
+    color: black; 
+    text-decoration: none; 
+    border: 2px solid transparent;
+    border-radius: 5px; 
+    transition: border 0.3s;
+    margin: 0 10px; 
+    font-weight: bold; ;
+}
+
+.buttoncv:hover, .buttongithub:hover {
+    border: 2px solid black; 
+}
+
+
+.aboutcontainer img {
+    width: 15vw;
+    height: auto;
+    border-radius: 2%;
+    margin: 30px;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: #C0C0C0;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 1%;
+}
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.experience h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: monospace;
+    color: black;
+    text-shadow: 2px 2px 4px gray;
+}
+
+/* Flip-boxes Experience*/
+.flip-box-container {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+    margin: 20px 0;
+}
+
+.studies, .flip-box-back-other {
+    display: inline-block;
+    width: 450px;
+    height: 350px;
+    padding-top: 70px;
+    background-color: aliceblue; 
+    border-radius: 2%;
+    font-family: monospace;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);
+    
+}
+
+.studies h3 {
+    font-size: 20px;
+    padding-top: 80px;
+}
+
+.flip-box {
+    width: 450px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 2%;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 2%;
+}
+
+.flip-box-front {
+    background-color: aliceblue;
+    color: black;
+}
+
+.flip-box-back {
+    background-color: aliceblue;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.buttonHB {
+    font-size: 15px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.buttonhb {
+    display: inline-block; 
+    padding: 10px 20px; 
+    color: black; 
+    text-decoration: none; 
+    border: 2px solid transparent;
+    border-radius: 5px; 
+    transition: border 0.3s;
+    margin: 0 10px; 
+    font-weight: bold; ;
+}
+
+.buttonhb:hover {
+    border: 2px solid black; 
+}
+
+.buttonGithub {
+    font-size: 15px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.buttongithub {
+    display: inline-block; 
+    padding: 10px 20px; 
+    color: black; 
+    text-decoration: none; 
+    border: 2px solid transparent;
+    border-radius: 5px; 
+    transition: border 0.3s;
+    margin: 0 10px; 
+    font-weight: bold; ;
+}
+
+.buttongithub:hover {
+    border: 2px solid black; 
+}
+
+
+
+/*Project section*/
+.projects {
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: flex-start; 
+    gap: 40px;                  
+    justify-content: center;  
+    margin-top: 80px; 
+}
+
+.project:hover {
+    transform: scale(1.03);
+}
+
+.project {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px;
+    width: 35%;                    
+    height: 600px;                 
+    background-color: #C0C0C0;    
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2); 
+    border-radius: 1%;   
+    transition: transform 0.3s ease; 
+    padding: 20px; 
+}
+
+.project h3 {
+    font-family: monospace;
+    color: black;
+    text-shadow: 2px 2px 4px gray; 
+    font-size: 30px; 
+    margin: 0 0 20px 0; 
+}
+
+
+.innerbox {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;        
+    align-items: center;            
+    background-color: aliceblue;
+    text-align: center;             
+    height: 70%;      
+    width: 70%;
+    border-radius: 2%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+.innerbox h3 {
+    font-family: monospace;
+    color: black;
+    font-size: 18px;               
+    margin-bottom: 20px;              
+}
+
+
+.imagecontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;          
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+.imagecontainer img {
+    max-width: 70%;
+    height: auto;                     
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Language section*/
+.LanguageImages,
+.FrameworkImages {
+    text-align: center; 
+    margin-bottom: 0px; 
+}
+
+.LanguageImages img,
+.FrameworkImages img {
+    width: 45%; 
+    height: 175px; 
+    margin: 10px; 
+    max-width: 150px; 
+    padding: 40px;
+}
+
+.LanguageImages img:hover,
+.FrameworkImages img:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    margin-top: 50px;
+    font-family: monospace;
+    color: black;
+    text-shadow: 2px 2px 4px gray; 
+    font-size: 30px; 
+}
+
+/*Contact section*/
+.Contact {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title {
+    font-family: monospace;
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 2px;
+    background-color: black;
+    border-radius: 5%;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: black;
+    font-family: monospace;
+    color: black;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid black;
+}
+
+.contact-inputs::placeholder {
+    color: black;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: black;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #7CB9E8;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.contact-left button img {
+    height: 15px;
+}
