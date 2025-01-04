@@ -48,16 +48,42 @@ body {
     text-shadow: 1px 1px 2px gray; 
     letter-spacing: 3px; 
     position: relative;
+    border-radius: 10px;
     top: 35px;
     left: -15%;
 }
 
-.HomeButton {
-    position: absolute;
-    top: 20px;
+.home-button-container {
+    position: relative;
+    top: -300px;
     left: 20px;
+    gap: 10px; 
+    display: flex; 
+    align-items: center; 
 }
 
+.toggle-btn {
+    font-size: 35px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black; 
+    transition: transform 0.3s ease; 
+}
+
+.home-link {
+    font-size: 23px; 
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold;
+    font-family: monospace;
+    transition: transform 0.3s ease; 
+}
+
+.home-link:hover, .toggle-btn:hover {
+    transform: scale(1.1); 
+}
 .ProjectImages {
     display: flex;
     flex-wrap: wrap;
@@ -67,7 +93,7 @@ body {
 
 .ProjectImageContainer {
     position: relative;
-    top: 160px;
+    top: 90px;
     width: 40%; 
     text-align: center; 
     margin-bottom: 30px; 
@@ -259,7 +285,7 @@ body {
     margin: 10px 0;
     padding: 5px;
     font-family: monospace;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .buttongroup {
@@ -542,23 +568,27 @@ body {
 
 /*Language section*/
 .LanguageImages,
-.FrameworkImages {
+.FrameworkImages,
+.DataVisualization {
     text-align: center; 
     margin-bottom: 0px; 
 }
 
 .LanguageImages img,
-.FrameworkImages img {
+.FrameworkImages img,
+.DataVisualization img {
     width: 45%; 
-    height: 175px; 
+    height: auto; 
     margin: 10px; 
     max-width: 150px; 
     padding: 40px;
 }
 
 .LanguageImages img:hover,
-.FrameworkImages img:hover {
+.FrameworkImages img:hover,
+.DataVisualization img:hover {
     transform: scale(1.05);
+    transition: transform 0.4s ease;
 }
 
 h3 {
@@ -578,7 +608,7 @@ h3 {
 }
 
 .contact-container {
-    height: 100vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -641,7 +671,7 @@ h3 {
     gap: 10px;
     border: none;
     border-radius: 50px;
-    background: #7CB9E8;
+    background: #C0C0C0;
     cursor: pointer;
     font-family: monospace;
 }
