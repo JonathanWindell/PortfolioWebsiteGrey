@@ -84,6 +84,7 @@ body {
 .home-link:hover, .toggle-btn:hover {
     transform: scale(1.1); 
 }
+
 .ProjectImages {
     display: flex;
     flex-wrap: wrap;
@@ -232,7 +233,7 @@ body {
 
 .infobox {
     margin-left: 20px;
-    height: 300px;
+    height: 30%;
     background-color: #FAF9F6;
     padding: 10px;
     border-radius: 5px;
@@ -242,6 +243,20 @@ body {
     color:black;
     position: relative;
     z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .infobox {
+        max-width: 100%; 
+        padding: 15px; 
+        box-shadow: none; 
+    }
+}
+
+@media (max-width: 480px) {
+    .infobox {
+        font-size: 0.9rem; 
+    }
 }
 
 .wrapper {
@@ -367,7 +382,6 @@ body {
     border-radius: 2%;
     font-family: monospace;
     box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);
-    
 }
 
 .studies h3 {
