@@ -12,6 +12,7 @@ body {
     width: 100%;
 }
 
+/*Project overview 1*/
 .projectoverviewh1 {
     background-color: #FAF9F6;
     font-size: 30px;
@@ -19,9 +20,8 @@ body {
     color: black;
     text-shadow: 2px 2px 4px gray;
     letter-spacing: 5px;
-    position: relative;
-    top: 30px;
-    left: 43%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .Description {
@@ -30,32 +30,67 @@ body {
     color: black;
     text-shadow: 2px 2px 4px gray;
     letter-spacing: 5px;
-    position: relative;
-    top: 50px;
-    left: 43%;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .ProjectDescription {
-    font-size: 20px; 
-    font-family: monospace; 
-    font-style: normal; 
-    font-weight: bolder; 
-    background-color: #C0C0C0; 
-    width: 1100px; 
-    padding: 15px; 
-    box-shadow: 2px 2px 4px gray; 
-    color: black; 
-    text-shadow: 1px 1px 2px gray; 
-    letter-spacing: 3px; 
-    position: relative;
+    font-size: 18px;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #C0C0C0;
+    max-width: 1100px;
+    width: 90%;
+    padding: 15px;
+    box-shadow: 2px 2px 4px gray;
+    color: black;
+    text-shadow: 1px 1px 2px gray;
+    letter-spacing: 3px;
     border-radius: 10px;
-    top: 35px;
-    left: -15%;
+    margin: 35px auto 0;
+}
+
+@media (max-width: 768px) {
+    .projectoverviewh1 {
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+
+    .Description {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .ProjectDescription {
+        font-size: 16px;
+        letter-spacing: 2px;
+        width: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .projectoverviewh1 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .Description {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .ProjectDescription {
+        font-size: 14px;
+        letter-spacing: 1px;
+        width: 90%;
+        padding: 10px;
+    }
 }
 
 .home-button-container {
     position: relative;
-    top: -300px;
+    top: -270px;
     left: 20px;
     gap: 10px; 
     display: flex; 
@@ -338,7 +373,6 @@ body {
 }
 
 /*Experience*/
-/*Experience*/
 .experiences {
     display: flex;
     flex-direction: column;
@@ -605,7 +639,7 @@ body {
 .innerbox h3 {
     font-family: monospace;
     color: black;
-    font-size: 18px;               
+    font-size: 18px;
     margin-bottom: 20px;              
 }
 
@@ -657,32 +691,6 @@ h3 {
     color: black;
     text-shadow: 2px 2px 4px gray; 
     font-size: 30px; 
-}
-
-.Description {
-    max-width: 90%;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.ProjectDescription {
-    font-weight: 400;
-    font-size: 18px;
-    word-wrap: break-word;
-}
-
-@media (max-width: 768px) {
-    .ProjectDescription {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .ProjectDescription {
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
 }
 
 /*Contact section*/
