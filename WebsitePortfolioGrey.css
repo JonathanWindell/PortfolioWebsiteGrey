@@ -698,17 +698,17 @@ body {
 .LanguageImages,
 .FrameworkImages,
 .DataVisualization {
-    text-align: center; 
-    margin-bottom: 0px; 
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 .LanguageImages img,
 .FrameworkImages img,
 .DataVisualization img {
-    width: 45%; 
-    height: auto; 
-    margin: 10px; 
-    max-width: 150px; 
+    width: 45%;
+    height: auto;
+    margin: 10px;
+    max-width: 150px;
     padding: 40px;
 }
 
@@ -723,8 +723,8 @@ h3 {
     margin-top: 50px;
     font-family: monospace;
     color: black;
-    text-shadow: 2px 2px 4px gray; 
-    font-size: 30px; 
+    text-shadow: 2px 2px 4px gray;
+    font-size: 30px;
 }
 
 /*Contact section*/
