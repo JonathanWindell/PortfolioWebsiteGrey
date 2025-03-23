@@ -1,0 +1,116 @@
+/*
+.LanguageImages,
+.FrameworkImages,
+.DataVisualization {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.LanguageImages img,
+.FrameworkImages img,
+.DataVisualization img {
+    width: 45%;
+    height: auto;
+    margin: 10px;
+    max-width: 150px;
+    padding: 40px;
+}
+
+.LanguageImages img:hover,
+.FrameworkImages img:hover,
+.DataVisualization img:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+
+.FrameworkContainer, .MatplotlibContainer, .SeabornContainer, .LanguageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.ProgressContainer {
+    border-radius: 30px;
+    width: 20%;
+    background-color: #C0C0C0;
+    overflow: hidden;
+}
+
+.SkillsHTML, .SkillsMatplotlib, .SkillsSeaborn, .SkillsCSS, .SkillsJS, .SkillsHTML, .SkillsPython, .SkillsPostgreSQL, .SkillsCSharp  {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 30px;
+    height: 100%;
+    line-height: 20px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.SkillsHTML {width: 40%; background-color: #667799;}
+.SkillsMatplotlib {width: 30%; background-color: #667799;}
+.SkillsSeaborn {width: 50%; background-color: #667799;}
+.SkillsCSS {width: 70%; background-color: #667799;}
+.SkillsHTML {width: 60%; background-color: #667799;}
+.SkillsJS {width: 60%; background-color: #667799;}
+.SkillsPython {width: 60%; background-color: #667799;}
+.SkillsPostgreSQL {width: 60%; background-color: #667799;}
+.SkillsCSharp  {width: 60%; background-color: #667799;}
+*/
+
+/*
+<div class= "LanguageContainer">
+<img src = "Images/css3.svg" alt="LanguageImage 1">
+<div class= "ProgressContainer">
+<div class = "SkillsCSS">70%</div>
+</div>
+<img src ="Images/html-5-logo.svg" alt="LanguageImage 2">
+<div class = "ProgressContainer">
+<div class = "SkillsHTML">80%</div>
+</div>
+<img src = "Images/javascript-1.svg" alt="LanguageImage 3">
+<div class = "ProgressContainer">
+<div class = "SkillsJS">20%</div>
+</div>
+<img src= "Images/Python-logo-notext.svg.png" alt="LanguageImage 4">
+<div class = "ProgressContainer">
+<div class = "SkillsPython">70%</div>
+</div>
+<img src= "Images/PostgreSQL.png" alt="LanguageImage 5">
+<div class = "ProgressContainer">
+<div class = "SkillsPostgreSQL">60%</div>
+</div>
+<img src ="Images/CSharpIcon1.png" alt="LanguageImage 6">
+<div class = "ProgressContainer">
+<div class = "SkillsCSharp">50%</div>
+</div>
+</div>
+</div>
+<div class="FrameworkImages">
+<h3>Frameworks</h3>
+<div class = "FrameworkContainer">
+<img src= "Images/flask-logo-44C507ABB7-seeklogo.com.png" alt="FrameworkImage 1">
+<div class = "ProgressContainer">
+<div class = "SkillsHTML">40%</div>
+</div>
+</div>
+</div>
+<div class="DataVisualization">
+<h3>Data Visualization</h3>
+<div class = "MatplotlibContainer">
+<img src = "Images/Matplotlib_icon.svg.png" alt="DataVisualizationImage">
+<div class = "ProgressContainer">
+<div class = "SkillsMatplotlib">30%</div>
+</div>
+</div>
+<div class = "SeabornContainer">
+<img src = "Images/Seaborn.png" alt="DataVisualizationImage">
+<div class = "ProgressContainer">
+<div class = "SkillsSeaborn">50%</div>
+</div>
+</div>
+*/
